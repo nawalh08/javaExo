@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./Css/index.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1> Antoine DIEUDONNE</h1>
+        <h2> Contact</h2>
+        <nav>
+            <a href="./Pagecache.html"><img src="./assets/5a0591809cf05203c4b60418.png" width="25" height="25"></a>
+            <a href="./index.html">Accueil</a>
+            <a href="./Horaires.html">Horraires</a>
+            <a href="./Contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Qui êtes vous ?</legend>
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom"><br><br>
+                <label for="prenom">Prénom:</label>
+                <input type="text" id="prenom" name="prenom"><br><br>
+                <label for="date">Date de naissance :</label>
+                <input type="date" id="date" name="date"><br><br>
+                <label for="gender">Sexe</label>
+                <input type="radio" id="homme" name="gender">Homme
+                <input type="radio" id="Femme" name="gender">Femme
+            </fieldset>
+            <fieldset>
+                <legend>Sujet de votre demande</legend>
+                Est-ce urgent ?<input type="checkbox"><br><br>
+                <label for="problem">Type de problème</label>
+                <select name="problem" id="problem">
+                    <optgroup label="Compte">
+                        <option value="1">Je n'arrive pas à accéder à mon compte</option>
+                        <option value="2">Je crois que j'ai été piraté</option>
+                        <option value="3">Je n'arrive pas à changer mon mot de passe</option>
+                        <option value="4">J'ai perdu mes identifiants</option>
+                    <optgroup label="Achat">
+                        <option value="5">Je n'arrive pas à confirmer mon achat</option>
+                        <option value="6">J'aimerais avoir des nouvelles de ma livraison</option>
+                </select>
+
+            </fieldset>
+            <fieldset>
+                <legend> Commentaire</legend>
+
+                <label for="Message" id="notes">Notes :</label>
+                <br>
+                <textarea></textarea>
+            </fieldset>
+            <button id="envoie">Envoyer ma question</button>
+        </form>
+    </main>
+
+</body>
+
+</html>

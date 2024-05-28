@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="./main.js" defer></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <button class="btn btn-outline-primary" id="myBtn">Ajouter un film</button>
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            
+            <form action="javascript:void(0);" id="form" class="mt-4">
+                <div class="form-group">
+                    <label for="title">Titre</label>
+                    <input type="text" name="title" id="title" class="form-control" required />
+                </div>
+                <div class="form-group">
+                    <label for="year">Année</label>
+                    <input type="number" min="1920" max="2023" name="year" id="year" class="form-control" required />
+                </div>
+                <input type="hidden" id="hidden" />
+                <button class="btn btn-xs btn-primary" id="form-save">Enregistrer</button>
+                <button class="btn btn-xs" id="form-cancel">Annuler</button>
+            </form>
+        </div>
+
+    </div>
+    <section class="container mt-1">
+        <div id="content">
+          <h1 class="text-center">Films</h1>
+          <table class="table table-bordered">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Titre</th>
+                <th scope="col">Année</th>
+                <th scope="col">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="mon-tbody">
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <button id="btnsubmitCat">Afficher tableau</button>
+</body>
+
+</html>

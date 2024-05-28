@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="./main.js"></script>
+    <title>Bonjour</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="navbar-brand" href="#">
+              <img src="./assets/pokeball-alexa-style-blog-pokemon-inspired-charmander-daily-8.png" width="30" height="30" class="d-inline-block align-top" alt="">
+              Bootstrap
+            </a>
+          </nav>
+    </header>
+    <main>
+        <input type="text" id="Search">
+        <button onclick="getTimes()">Rechercher</button>
+        <div id="container">
+            <div id="poke-container" class="card">
+                   <img id="displayIMG" class="card" alt="TOTO"/>
+                   <div id="nom" class="card">
+                        NOM
+                   </div>
+                   <div id="id" class="card">
+                        NOM
+                   </div>
+                   <div id="taille" class="card">
+                        TAILLE
+                   </div>
+                   <div id="poids" class="card">
+                        POIDS
+                   </div>
+                   <ul id="type" class="card">
+                        TYPES
+                   </ul>
+                   <ul id="capacities" class="card">
+                        CAPACITES
+                   </ul>
+                    
+            </div>
+        </div>
+        <button id="suivant"onclick="changePokemonPlus()">Pokémon suivant </button>
+        <button id="precedant" onclick="changePokemonMoins()">Pokémon précédent </button>
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+<script src="main.js"></script>
+
+</html>

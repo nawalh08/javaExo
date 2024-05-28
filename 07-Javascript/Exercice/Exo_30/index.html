@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="./main.js" defer></script>
+</head>
+
+<body>
+    <div>
+        <form action="" method="get" class="form-example" id="Inscrip" onsubmit="return false">
+            <legend>Ajouter un chat</legend>
+            <div class="form-example">
+                <label for="username">Entrer le nom de votre chat </label>
+                <input type="text" name="CatName" value="" id="CatName" required />
+                
+            </div>
+            <div class="form-example">
+                <label for="password">Entrer l'age de votre chat </label>
+                <input type="text" name="CatAge" value="" id="CatAge" required />
+                
+            </div>
+            <div class="form-example">
+                <input type="submit" value="Ajouter un chat" id="btnsubmitCat"/>
+            </div>
+        </form>
+        <hr>
+        <form action="" method="get" class="form-example" id="Inscrip" onsubmit="return false">
+            <legend>Ajouter un chien</legend>
+            <div class="form-example">
+                <label for="username">Entrer le nom de votre chien </label>
+                <input type="text" name="DogName" value="" id="DogName" required />
+                
+            </div>
+            <div class="form-example">
+                <label for="password">Entrer l'age de votre chien </label>
+                <input type="text" name="DogAge" value="" id="DogAge" required />
+                
+            </div>
+            <div class="form-example">
+                <input type="submit" value="Ajouter un chien" id="btnsubmitDog"/>
+            </div>
+        </form>
+        <button id="Aff">Afficher tableau</button>
+
+        <table id="myTable">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Nom</th>
+                <th>Age</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Croquette</td>
+                <td>3 Ans</td>                
+              </tr>
+            </tbody>
+          </table>
+
+        
+    </div>
+</body>
+</html>

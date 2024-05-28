@@ -1,0 +1,120 @@
+*{
+    background-color: rgb(30, 144, 255);
+}
+header{
+    color: white;
+    text-align: center;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+img{
+    text-align: center;
+    display: block;
+    margin: auto;
+    border-radius: 25px;
+    margin-bottom: 10px;
+}
+#Lorem1{
+    color: aliceblue;
+}
+table{
+    margin: auto;
+    margin-top: 10px;
+    background-color: blue;
+    border-radius: 10px;
+}
+th{
+    background-color: blue;
+    border-style: solid;
+  border-color: blue;
+    color: white;
+    border-spacing: 0;
+    
+}
+td{
+    background-color: white;
+    text-align: center;
+}
+input{
+    background-color: white;
+    border: none;
+}
+select{
+    background-color: white;
+    color: black;
+    
+}
+textarea{
+    background-color: white;
+    border: none;
+    resize: none;
+}
+option{
+    background-color: white;
+}
+
+optgroup{
+    background-color: white;
+}
+form{
+    
+    position: absolute;
+
+ left: 25%;
+
+ right: 25%;
+    color: white;
+    
+    
+
+    
+}
+fieldset{
+    border-radius: 25px;
+    padding: 25px;
+    
+    
+}
+textarea{
+    display: block;
+    margin: auto;
+    width: 90%;
+    height: 250px;
+}
+#notes{
+    margin-left: 35px;
+    
+}
+#envoie{
+    position: absolute;
+    left: 75%;
+    background-color: blue;
+    color: white;
+    width: 25%;
+    border-radius: 15px;
+    
+    margin-top: 20px;
+    
+    height: 2.2rem;
+    border: none;
+}
+a:hover{
+    font-size: 150%;
+}
+a{
+    margin: 0 5 0 5;
+}
+fieldset {
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+legend, label{
+    background: transparent;
+}
+section{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}

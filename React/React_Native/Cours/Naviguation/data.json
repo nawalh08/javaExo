@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "nom": "Toto",
+        "prenom": "Toto",
+        "phone_number": "0123456789",
+        "Location" : "Roubaix"
+    },
+    {
+        "id": 2,
+        "nom": "Tata",
+        "prenom": "Tata",
+        "phone_number": "0123456789",
+        "Location" : "Pariis"
+    }
+]

@@ -1,0 +1,37 @@
+doctype html
+html(lang='en')
+  head
+    title Staff Directory
+    link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.css')
+    style.
+      table.ui.celled img { display: inline-block; }
+      footer { margin: 35px 0 15px 0; text-align: center }
+  body
+    main#main
+    h1.ui.center.aligned.header Staff Directory
+    .ui.container
+      table.ui.celled.table.center.aligned
+        thead
+          tr
+            th Avatar
+            th First Name
+            th Last Name
+            th Email
+            th Phone
+            th City
+        tbody
+       
+            tr
+            
+              td
+                img(src="https://banner2.cleanpng.com/20180331/orq/kisspng-pug-puppy-stock-photography-pet-dog-breed-pug-5abf8085e5b893.982130441522499717941.jpg") 
+              td Lucky
+              td Luke
+              td Tireur_Rapide@farwest.com
+              td -
+              td Far_West
+        tfoot
+          tr
+            th(colspan='6')
+    footer
+      p © #{new Date().getFullYear()} My Company

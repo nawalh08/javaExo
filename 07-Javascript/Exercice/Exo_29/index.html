@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./main.js" defer></script>
+</head>
+
+<body>
+    <div>
+        <form action="" method="get" class="form-example" id="Inscrip" onsubmit="return false">
+            <div class="form-example">
+                <label for="username">Enter your name: </label>
+                <input type="text" name="username" value="" id="username" required />
+                <p id="email-validation" style="display: none;">Le champ est invalide</p>
+            </div>
+            <div class="form-example">
+                <label for="password">Enter your password: </label>
+                <input type="text" name="password" value="" id="password" required />
+                <p id="email-validation2" style="display: none;">Le champ est invalide</p>
+            </div>
+            <div class="form-example">
+                <input type="submit" value="Subscribe!" id="btnsubmit" disabled onclick="getNewUser()"/>
+            </div>
+        </form>
+
+        
+    </div>
+</body>
+</html>
