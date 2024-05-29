@@ -114,9 +114,8 @@ public class ProduitService extends BaseService implements Repository<Produit> {
         }
         throw  new Exception("erreur valeur");
     }
-
-
-    //Afficher la valeur du stock des produits d'une marque choisie.
+    //                         - Exercice 4 :
+    //                  1. Afficher la valeur du stock des produits d'une marque choisie.
     public double prixTotalStock(String marque) throws Exception {
         session = sessionFactory.openSession();
         Query<Double> produitQuery = session.createQuery(" SELECT SUM(stock*prix) FROM Produit WHERE marque = :marque");
@@ -124,35 +123,30 @@ public class ProduitService extends BaseService implements Repository<Produit> {
        double value = produitQuery.getSingleResult();
         session.close();
         return value;
-
-
     }
 
-    //Calculer le prix moyen des produits.
+    //              2. Calculer le prix moyen des produits.
     public double prixMoyenProduits() throws Exception {
         session = sessionFactory.openSession();
         Query<Double> produitQuery = session.createQuery("SELECT AVG(prix) from Produit");
-
         double value = produitQuery.getSingleResult();
         session.close();
         return value;
     }
 
-    //Récupérer la liste des produits d'une marque choisie.
+    //              3. Récupérer la liste des produits d'une marque choisie.
 
     public List<Produit> listProduiMarque(String marque) throws Exception {
 
             session = sessionFactory.openSession();
             Query<Produit> produitQuery = session.createQuery("from Produit where marque = :marque");
             produitQuery.setParameter("marque",marque);
-
             List<Produit> produitList = produitQuery.list();
             session.close();
             return produitList;
 
-
     }
-    // Supprimer les produits d'une marque choisie de la table produit.
+    //              4. Supprimer les produits d'une marque choisie de la table produit.
 
     public int deleteByMarque(String marque) {
         // Produit produit = null;
