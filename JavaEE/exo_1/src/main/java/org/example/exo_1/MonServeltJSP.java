@@ -8,7 +8,6 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 @WebServlet(name = "monServletJSP",value = "/monservlet-jsp")
-
 public class MonServeltJSP extends HttpServlet {
     private String nom ;
     private String prenom ;

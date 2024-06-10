@@ -14,7 +14,7 @@ public class MonServlet extends HttpServlet {
 
     @Override
     public void init() throws ServletException{
-        System.out.println("Mons servlet est lancé ");
+        System.out.println("Mon servlet est lancé ");
     }
 
     @Override
@@ -23,7 +23,8 @@ public class MonServlet extends HttpServlet {
         System.out.println("Une requette get a été envoyée à /monServlet");
         resp.setContentType("text/plain");
         PrintWriter writer= resp.getWriter();
-        writer.println("<h1> Je renvoie du texte simple </h1>");
+        writer.println("<h1> Je renvoie du texte simple !! les balises servent à rien ici parce qu'il va lire" +
+                " c'est uniquement le texte donc les balises deviennent du simple texte   </h1>");
     }
 
     @Override

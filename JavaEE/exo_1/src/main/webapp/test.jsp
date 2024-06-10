@@ -14,7 +14,7 @@
 
 <h1>Ma premiere page JSP !!!!</h1>
 
-<h2>Bonjour ${nom} ${prenom} </h2>
+<h2>Bonjour moi c'est ${nom} ${prenom} et j'ai ${age} ans </h2>
 
 </body>
 </html>
