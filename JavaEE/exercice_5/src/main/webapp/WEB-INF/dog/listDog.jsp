@@ -23,10 +23,11 @@
             <table class="table table-dark text-center align-middle">
                 <thead>
                 <tr>
-                    <th>Id</th>
-                    <th>Name</th>
-                    <th>Breed</th>
-                    <th>Date of birth</th>
+                    <th> Id </th>
+                    <th> Name </th>
+                    <th> Breed </th>
+                    <th> Date of birth </th>
+                    <th> Action </th>
                 </tr>
                 </thead>
                 <tbody>
@@ -36,14 +37,20 @@
                     <td><%= dogs.get(i).getName() %></td>
                     <td><%= dogs.get(i).getBreed() %></td>
                     <td><%= dogs.get(i).getBirthDate().getDayOfMonth()+"/"+dogs.get(i).getBirthDate().getMonthValue()+"/"+dogs.get(i).getBirthDate().getYear() %></td>
+                    <td><button class="btn btn-success">details</button></td>
 
                 </tr>
+
                 <% } %>
+
                 </tbody>
+
             </table>
             <% } else { %>
             <p>You don't have a dog !!!!</p>
             <% }  %>
+
+
         </div>
     </div>
 </main>
