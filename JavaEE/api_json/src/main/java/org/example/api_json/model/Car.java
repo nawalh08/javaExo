@@ -1,4 +1,9 @@
-package org.example.api_json;
+package org.example.api_json.model;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.experimental.SuperBuilder;
 
 import java.time.LocalDate;
 
@@ -7,6 +12,9 @@ public class Car {
     private String brand ;
     private int fabrication ;
     private String color;
+
+    public Car() {
+    }
 
     public Car(int id, String brand, int fabrication, String color) {
         this.id = id;
